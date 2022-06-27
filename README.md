@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> information soon
+> information soon...
 
 
 ## Built With
