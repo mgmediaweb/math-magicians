@@ -1,16 +1,15 @@
+import React from 'react';
 import Calculator from './components/Calculator';
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-
+class App extends React.PureComponent {
+  render() {
+    return (
+      <div className="App">
         <Calculator />
-
-      </header>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
