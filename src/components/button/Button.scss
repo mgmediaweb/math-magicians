@@ -1,0 +1,41 @@
+$color-btn-normal: #e0e0e0;
+$color-btn-operator: #f39148;
+
+$border-width: 1px;
+
+.btn {
+  align-items: center;
+  background-color: $color-btn-normal;
+  box-sizing: border-box;
+  color: black;
+  display: flex;
+  height: 66px;
+  font-size: 1.1rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  user-select: none;
+}
+
+.btn-normal {
+  background-color: $color-btn-normal;
+  border: $border-width solid darken($color-btn-normal, 10%);
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($color-btn-normal, 5%);
+  }
+}
+
+.btn-operator {
+  background-color: $color-btn-operator;
+  border: $border-width solid darken($color-btn-operator, 10%);
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($color-btn-operator, 5%);
+  }
+}
