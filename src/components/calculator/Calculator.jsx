@@ -1,65 +1,45 @@
 import React from 'react';
-import Button from './button/Button';
-import Screen from './screen/Screen';
-import Calculate from '../logic/calculate';
+import Button from '../button/Button';
+import Screen from '../screen/Screen';
+import Calculate from '../../logic/calculate';
 import './Calculator.scss';
 
 class Calculator extends React.PureComponent {
   constructor(props) {
     super(props);
+
     this.state = {
-      screen: '0',
+      total: null,
+      next: null,
     };
 
     this.axn = this.axn.bind(this);
   }
 
+  setDisplay(content) {
+    this.setState(() => ({ next: content }));
+  }
+
   axn(opc) {
-    const obj = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    const ans = Calculate(obj, opc);
-    console.log(ans);
-
-    /*
-    this.setState((state) => {
-      if (opc === '=') {
-        console.log('go result');
-      } else if (opc === 'AC') {
-        return { screen: '0' };
-      } else {
-        let ans = state.screen + opc;
-
-        if (state.screen === '0') {
-          ans = opc;
-        }
-
-        return { screen: ans };
-      }
-
-      return true;
-    });
-    */
+    this.setState((state) => (Calculate(state, opc)));
   }
 
   render() {
-    const { screen } = this.state;
+    const { next, total } = this.state;
     return (
       <div className="calculatorBody">
-        <Screen info={screen} />
+        <Screen info={next || total || '0'} onChange={(e) => this.setDisplay(e.target.value)} />
         <div className="rowBtn normal">
           <Button text="AC" type="normal" axn={this.axn} />
           <Button text="+/-" type="normal" axn={this.axn} />
           <Button text="%" type="normal" axn={this.axn} />
-          <Button text="/" type="operator" axn={this.axn} />
+          <Button text="÷" type="operator" axn={this.axn} />
         </div>
         <div className="rowBtn normal">
           <Button text="7" type="normal" axn={this.axn} />
           <Button text="8" type="normal" axn={this.axn} />
           <Button text="9" type="normal" axn={this.axn} />
-          <Button text="X" type="operator" axn={this.axn} />
+          <Button text="x" type="operator" axn={this.axn} />
         </div>
         <div className="rowBtn normal">
           <Button text="4" type="normal" axn={this.axn} />
