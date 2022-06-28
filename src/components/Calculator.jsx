@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './button/Button';
 import Screen from './screen/Screen';
+import Calculate from '../logic/calculate';
 import './Calculator.scss';
 
 class Calculator extends React.PureComponent {
@@ -14,6 +15,15 @@ class Calculator extends React.PureComponent {
   }
 
   axn(opc) {
+    const obj = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    const ans = Calculate(obj, opc);
+    console.log(ans);
+
+    /*
     this.setState((state) => {
       if (opc === '=') {
         console.log('go result');
@@ -31,6 +41,7 @@ class Calculator extends React.PureComponent {
 
       return true;
     });
+    */
   }
 
   render() {
