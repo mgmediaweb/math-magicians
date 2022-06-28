@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> information soon...
+> Simulator of calculator with the principals functions. 
 
 
 ## Built With
@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://mgmediaweb.github.io/math-magicians/build/)
+[Live Demo Link](https://www.globevent.online/math-magicians/)
 
 ### Prerequisites
 
