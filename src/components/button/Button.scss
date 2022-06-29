@@ -18,6 +18,10 @@ $border-width: 1px;
   user-select: none;
 }
 
+.double {
+  grid-column: 1/3;
+}
+
 .btn-normal {
   background-color: $color-btn-normal;
   border: $border-width solid darken($color-btn-normal, 10%);
@@ -29,7 +33,7 @@ $border-width: 1px;
   }
 }
 
-.btn-operator {
+.btn-orange {
   background-color: $color-btn-operator;
   border: $border-width solid darken($color-btn-operator, 10%);
   color: black;
