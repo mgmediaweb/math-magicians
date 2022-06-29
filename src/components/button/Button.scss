@@ -25,7 +25,6 @@ $border-width: 1px;
 .btn-normal {
   background-color: $color-btn-normal;
   border: $border-width solid darken($color-btn-normal, 10%);
-  color: black;
 
   &:hover {
     cursor: pointer;
@@ -36,7 +35,6 @@ $border-width: 1px;
 .btn-orange {
   background-color: $color-btn-operator;
   border: $border-width solid darken($color-btn-operator, 10%);
-  color: black;
 
   &:hover {
     cursor: pointer;
