@@ -1,0 +1,17 @@
+@import "../config";
+
+.twoColumns {
+    align-items: flex-start;
+    display: flex;
+    /*flex-direction: row;*/
+}
+
+.screen {
+    background-color: $color-background;
+    box-sizing: border-box;
+    color: white;
+    /*display: block;*/
+    height: calc(100vh - $header-height);
+    padding: $padiing;
+    width: 100vw;
+}

@@ -4,7 +4,7 @@ import Screen from '../screen/Screen';
 import Calculate from '../../logic/calculate';
 import './Calculator.scss';
 
-function Calculator() {
+const Calculator = () => {
   const [state, setState] = useState({ total: null, next: null, operation: null });
 
   const setDisplay = (content) => {
@@ -54,6 +54,6 @@ function Calculator() {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;

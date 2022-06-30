@@ -1,0 +1,40 @@
+@import "../../config";
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    background-color: tomato !important;
+    color: white !important;
+}
+
+.header {
+    align-items: center;
+    background-color: silver;
+    box-sizing: border-box;
+    display: flex;
+    height: $header-height;
+    justify-content: space-between;
+    padding: $padiing;
+    width: 100%;
+}
+
+.link {
+    background-color: transparent;
+    border-radius: $padiing/2;
+    color: black;
+    display: inline-block;
+    margin: 0 $padiing;
+    padding: $padiing/2 $padiing;
+    text-decoration: none;
+
+    &:active, &:visited, &:focus  {
+        color: black;
+    }
+
+    &:hover {
+        background-color: white;
+    }
+}

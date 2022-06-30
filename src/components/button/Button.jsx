@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './Button.scss';
 
-function Button({ text, type, axn }) {
+const Button = ({ text, type, axn }) => {
   const clickAxn = (opc) => axn(opc);
 
   return (
@@ -15,7 +15,7 @@ function Button({ text, type, axn }) {
       {text}
     </div>
   );
-}
+};
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
