@@ -1,17 +1,28 @@
 @import "../config";
 
+h2 {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
 .twoColumns {
     align-items: flex-start;
     display: flex;
-    /*flex-direction: row;*/
+    justify-content: space-between;
+}
+
+.container {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: $padiing*2 $padiing;
+    width: 100%;
 }
 
 .screen {
-    background-color: $color-background;
     box-sizing: border-box;
     color: white;
-    /*display: block;*/
     height: calc(100vh - $header-height);
-    padding: $padiing;
     width: 100vw;
 }

@@ -6,17 +6,21 @@ h1 {
 }
 
 .active {
-    background-color: tomato !important;
+    background-color: $color-primary !important;
     color: white !important;
 }
 
-.header {
+.d-flex {
     align-items: center;
-    background-color: silver;
-    box-sizing: border-box;
     display: flex;
-    height: $header-height;
     justify-content: space-between;
+}
+
+.header {
+    background: transparentize($color-secondary,0.5);
+    box-sizing: border-box;
+
+    height: $header-height;
     padding: $padiing;
     width: 100%;
 }
@@ -24,17 +28,26 @@ h1 {
 .link {
     background-color: transparent;
     border-radius: $padiing/2;
-    color: black;
+    color: white;
     display: inline-block;
     margin: 0 $padiing;
     padding: $padiing/2 $padiing;
     text-decoration: none;
 
     &:active, &:visited, &:focus  {
-        color: black;
+        color: white;
     }
 
     &:hover {
-        background-color: white;
+        background-color: dimgray;
+    }
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+
+    img {
+        margin-right: $padiing;
     }
 }
