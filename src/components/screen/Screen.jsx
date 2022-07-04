@@ -1,11 +1,9 @@
 import PropTypes from 'prop-types';
 import './Screen.scss';
 
-function Screen({ info }) {
-  return (
-    <div className="screen">{info}</div>
-  );
-}
+const Screen = ({ info }) => (
+  <div className="screenCalc">{info}</div>
+);
 
 Screen.propTypes = {
   info: PropTypes.string.isRequired,

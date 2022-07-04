@@ -1,5 +1,6 @@
 .calculatorBody {
   background-color: white;
+  display: block;
   height: auto;
   margin: 0;
   max-width: 480px;
@@ -7,14 +8,8 @@
   width: 100%;
 }
 
-.rowBtn {
+.rowBtns {
   display: grid;
-}
-
-.normal {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.double {
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
 }

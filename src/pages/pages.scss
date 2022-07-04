@@ -1,0 +1,28 @@
+@import "../config";
+
+h2 {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.twoColumns {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: $padiing*2 $padiing;
+  width: 100%;
+}
+
+.screen {
+  box-sizing: border-box;
+  color: white;
+  height: calc(100vh - $header-height);
+  width: 100vw;
+}
