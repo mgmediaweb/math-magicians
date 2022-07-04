@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> Simulator of calculator with the principals functions. 
+> Simulator of calculator with the principals functions.  Deployment on Heroku
 
 
 ## Built With
@@ -13,7 +13,8 @@
 
 ## Live Demo
 
-[Live Demo Link](https://www.globevent.online/math-magicians/)
+[Heroku](https://math-lovers.herokuapp.com/)
+[Netlify](https://62c3271b4b5a0b1adb848e63--neon-stroopwafel-99986a.netlify.app/)
 
 ### Prerequisites
 
