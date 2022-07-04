@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> Simulator of calculator with the principals functions.  Deployment on Heroku
+> Simulator of calculator with the principals functions.
 
 
 ## Built With
