@@ -1,53 +1,54 @@
 @import "../../config";
 
 h1 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .active {
-    background-color: $color-primary !important;
-    color: white !important;
+  background-color: $color-primary !important;
+  color: white !important;
 }
 
 .d-flex {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header {
-    background: transparentize($color-secondary,0.5);
-    box-sizing: border-box;
-
-    height: $header-height;
-    padding: $padiing;
-    width: 100%;
+  background: transparentize($color-secondary, 0.5);
+  box-sizing: border-box;
+  height: $header-height;
+  padding: $padiing;
+  width: 100%;
 }
 
 .link {
-    background-color: transparent;
-    border-radius: $padiing/2;
+  background-color: transparent;
+  border-radius: $padiing/2;
+  color: white;
+  display: inline-block;
+  margin: 0 $padiing;
+  padding: $padiing/2 $padiing;
+  text-decoration: none;
+
+  &:active,
+  &:visited,
+  &:focus {
     color: white;
-    display: inline-block;
-    margin: 0 $padiing;
-    padding: $padiing/2 $padiing;
-    text-decoration: none;
+  }
 
-    &:active, &:visited, &:focus  {
-        color: white;
-    }
-
-    &:hover {
-        background-color: dimgray;
-    }
+  &:hover {
+    background-color: dimgray;
+  }
 }
 
 .logo {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 
-    img {
-        margin-right: $padiing;
-    }
+  img {
+    margin-right: $padiing;
+  }
 }
