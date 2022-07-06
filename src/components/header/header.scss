@@ -17,13 +17,13 @@ nav {
         margin: 0 $padiing;
         padding: calc($padiing/2) $padiing;
         text-decoration: none;
-      
+
         &:active,
         &:visited,
         &:focus {
           color: white;
         }
-      
+
         &:hover {
           background-color: dimgray;
         }
