@@ -7,9 +7,9 @@
 
 ## Built With
 
-- REACT JS
-- JAVASCRIPT ES6
-- SASS
+- REACT JS.
+- JAVASCRIPT ES6.
+- SASS.
 
 ## Live Demo
 
