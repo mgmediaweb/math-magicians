@@ -1,6 +1,3 @@
-import {
-  NavLink,
-} from 'react-router-dom';
 import calcImage from '../../assets/images/calculator.png';
 import './header.scss';
 
@@ -12,17 +9,11 @@ const Header = () => (
         <h1>Math Magicians</h1>
       </div>
       <nav>
-        <NavLink to="/Home" className="link">
-          Home
-        </NavLink>
-
-        <NavLink to="Calculator" className="link">
-          Calculator
-        </NavLink>
-
-        <NavLink to="Quote" className="link">
-          Quote
-        </NavLink>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/calculator">Calculator</a></li>
+          <li><a href="/quote">Quote</a></li>
+        </ul>
       </nav>
     </div>
   </div>

@@ -5,6 +5,33 @@ h1 {
   padding: 0;
 }
 
+nav {
+  ul {
+    li {
+      display: inline-block;
+
+      a {
+        background-color: transparent;
+        border-radius: calc($padiing/2);
+        color: white;
+        margin: 0 $padiing;
+        padding: calc($padiing/2) $padiing;
+        text-decoration: none;
+
+        &:active,
+        &:visited,
+        &:focus {
+          color: white;
+        }
+
+        &:hover {
+          background-color: dimgray;
+        }
+      }
+    }
+  }
+}
+
 .active {
   background-color: $color-primary !important;
   color: white !important;
@@ -22,26 +49,6 @@ h1 {
   height: $header-height;
   padding: $padiing;
   width: 100%;
-}
-
-.link {
-  background-color: transparent;
-  border-radius: $padiing/2;
-  color: white;
-  display: inline-block;
-  margin: 0 $padiing;
-  padding: $padiing/2 $padiing;
-  text-decoration: none;
-
-  &:active,
-  &:visited,
-  &:focus {
-    color: white;
-  }
-
-  &:hover {
-    background-color: dimgray;
-  }
 }
 
 .logo {

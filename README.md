@@ -2,14 +2,14 @@
 
 # Math Magicians
 
-> Simulator of calculator with the principals functions.  Deployment on Heroku
+> Simulator of calculator with the principals functions.
 
 
 ## Built With
 
-- REACT JS
-- JAVASCRIPT ES6
-- SASS
+- REACT JS.
+- JAVASCRIPT ES6.
+- SASS.
 
 ## Live Demo
 
